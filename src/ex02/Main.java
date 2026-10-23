@@ -13,7 +13,7 @@ public class Main {
         }
 
         System.out.println("Ahora los leeremos al reves: ");
-        for (int i = 5; i >= 0 ; i--){
+        for (int i = dades.length - 1; i >= 0 ; i--){
             System.out.print(dades[i] + "/ ");
         }
 
