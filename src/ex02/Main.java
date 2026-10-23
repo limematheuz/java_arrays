@@ -5,19 +5,21 @@ import java.util.Scanner;
 public class Main {
     static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int[] dades = new int[5];
+        int[] dades = new int[6];
 
         for(int i = 0; i < dades.length; i++){
             System.out.println("Introduce un numero: ");
             dades[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < 5; i++){
-            System.out.println(i + ":" + dades[i]);
+        System.out.println("Ahora los leeremos al reves: ");
+        for (int i = 5; i >= 0 ; i--){
+            System.out.print(dades[i] + "/ ");
         }
 
-        for (int i = dades.length;  ; i--){
-
+        System.out.println("Ahora los leeremos otra vez en el sentido normal: ");
+        for (int i = 0; i < dades.length; i++){
+            System.out.print(dades[i] + "/ ");
         }
     }
 }
