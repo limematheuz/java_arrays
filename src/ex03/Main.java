@@ -1,33 +1,33 @@
 package ex03;
 
+
 import java.util.Scanner;
 
 public class Main {
     static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int[] a = new int[5];
-        int[] b = new int[5];
-        int[] resultado = new int[5];
+        int[] arrayNum = new int[5];
+        double suma = 0.0;
 
-        for (int i = 0; i < a.length; i++){
-            System.out.println("Introduce un numerooooo: ");
-            a[i] = sc.nextInt();
+        for(int i = 0; i < arrayNum.length; i++){
+            System.out.println("Introduce un numero: ");
+            arrayNum[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < b.length; i++){
-            System.out.println("Introduce un numero para sumarlo con el anterior: ");
-            b[i] = sc.nextInt();
+//        double acumulador = 0.0;
+
+        for(int i = 0; i < arrayNum.length; i++){
+            suma = suma + arrayNum[i];
+
+//            acumulador = acumulador + i;
+//            System.out.println("la suma acumulada es: " + acumulador);
         }
 
+        System.out.println("la suma total es: " + suma);
+//        double promedio = acumulador/ arrayNum.length;
+        double promedio = suma/ arrayNum.length;
+        System.out.println("EL promedio es: " + promedio );
+     }
 
-        for (int i = 0; i < resultado.length; i ++){
-            resultado[i] = a[i] + b[i];
-            System.out.println("El resultado es: " + resultado[i]);
-        }
-
-        for (int i = 0; i < resultado.length; i++) {
-            System.out.println("a: " + a[i] + " b: " + b[i] + " resultado: " + resultado[i]);
-        }
-    }
 
 }
